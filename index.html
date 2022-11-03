@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Millenium</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container _container">
+		<div class="header__logo">
+			<svg width="161" height="55" viewBox="0 0 161 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M16.944 36L16.92 27.096L12.6 34.344H10.488L6.168 27.288V36H1.8V19.2H5.712L11.616 28.896L17.376 19.2H21.288L21.336 36H16.944Z"
+					fill="#2A2367" />
+				<path
+					d="M83.168 32.328V36H69.68V19.2H82.856V22.872H74.384V25.704H81.848V29.256H74.384V32.328H83.168ZM103.469 19.2V36H99.557L92.141 27.048V36H87.485V19.2H91.397L98.813 28.152V19.2H103.469ZM108.501 19.2H113.253V36H108.501V19.2ZM126.066 36.336C123.57 36.336 121.626 35.656 120.234 34.296C118.858 32.936 118.17 31.008 118.17 28.512V19.2H122.922V28.368C122.922 31.056 123.986 32.4 126.114 32.4C128.226 32.4 129.282 31.056 129.282 28.368V19.2H133.962V28.512C133.962 31.008 133.266 32.936 131.874 34.296C130.498 35.656 128.562 36.336 126.066 36.336ZM154.029 36L153.981 27.096L149.661 34.344H147.549L143.253 27.336V36H138.861V19.2H142.773L148.677 28.896L154.437 19.2H158.349L158.397 36H154.029Z"
+					fill="#2A2367" />
+				<rect x="28" y="19" width="7" height="17" fill="#6B5AF9" />
+				<rect x="42" y="7" width="7" height="41" fill="#6B5AF9" />
+				<rect x="56" width="7" height="55" fill="#6B5AF9" />
+			</svg>
+		</div>
+		<div class="header__menu menu">
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a href="#" class="menu__link">Главная</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Цены</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Кейсы и отзывы</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">Кейсы и Контакты</a>
+					</li>
+				</ul>
+				<ul class="menu__contacts">
+					<li class="menu__contact">
+						<a href="mailto:info@millenium.ru" class="menu__mail">info@millenium.ru</a>
+					</li>
+					<li class="menu__contact">
+						<a href="tel:+74955556565" class="menu__phone">+ 7 (495) 555 65 65</a>
+						<p class="menu__timetable">пн-пт 10:00–19:00</p>
+					</li>
+				</ul>
+			</nav>
+			<div class="menu__burger">
+				<span></span>
+			</div>
+		</div>
+		<div class="header__contacts contacts-header">
+			<div class="contacts-header__top">
+				<div class="contacts-header__socials">
+					<a href="#" class="contacts-header__socials _icon-telegram-icon">
+					</a>
+					<a href="#" class="contacts-header__socials _icon-whatsapp-icon">
+					</a>
+				</div>
+				<a href="tel:+74955556565" class="contacts-header__phone">+ 7 (495) 555 65 65</a>
+			</div>
+			<div class="contacts-header__bottom">
+				<p class="contacts-header__timetable">Ежедневно с 09:00 до 18:00</p>
+			</div>
+		</div>
+		<a href="#modal" class="header__button button modal-open">
+			<span class="button__text">Заказать звонок</span> 
+			<span class="button__icon _icon-phone"></span>
+		</a>
+	</div>
+</header>
+<div class="header-lock">
+</div>
+<div id="modal" class="modal">
+	<div class="modal__wrapper">
+		<div class="modal__body">
+			<h3 class="modal__title">Заявка на консультацию</h3>
+		<form class="modal__form">
+			<lable class="modal__lable">
+				<p class="modal__text">Ваше имя</p>
+				<input class="modal__input" type="text" name="name" placeholder="Введите ваше имя">
+			</lable>
+			<lable class="modal__lable">
+				<p class="modal__text">Номер телефона</p>
+				<input class="modal__input" type="tel" pattern="[0-9]{11}" name="Phone" placeholder="+ 7 (999) 999 99 99">
+			</lable>
+			<button class="modal__button">
+				Отправить
+			</button>
+		</form>
+		<p class="modal__footnote">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
+		</div>
+		<a href="#" class="modal__close modal-close">
+			<svg width="16" height="16" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12.1751 10.2896C12.6964 10.8111 12.6964 11.6536 12.1751 12.1751C11.9151 12.4351 11.5738 12.5657 11.2322 12.5657C10.8909 12.5657 10.5496 12.4351 10.2896 12.1751L6.28302 8.16827L2.27643 12.1751C2.01642 12.4351 1.67511 12.5657 1.3338 12.5657C0.992249 12.5657 0.65094 12.4351 0.39093 12.1751C-0.13031 11.6536 -0.13031 10.8111 0.39093 10.2896L4.39777 6.28302L0.39093 2.27643C-0.13031 1.75494 -0.13031 0.912414 0.39093 0.39093C0.912415 -0.13031 1.75494 -0.13031 2.27643 0.39093L6.28302 4.39776L10.2896 0.39093C10.8111 -0.13031 11.6536 -0.13031 12.1751 0.39093C12.6964 0.912414 12.6964 1.75494 12.1751 2.27643L8.16827 6.28302L12.1751 10.2896Z" fill="#363636"/>
+			</svg>
+		</a>
+	</div>
+</div>
+
+
+		<main class="main">
+				<section class="home">
+	<div class="home__container _container">
+		<div class="home__body">
+			<div class="home__top">
+				<h1 class="home__title title">
+					Разработка интернет-магазинов <span>на 1C-Битрикс</span>
+				</h1>
+				<div class="home__img">
+					<img src="img/home/home-bg.png" alt="Картинка">
+				</div>
+				<p class="home__text">
+					Разработаем интернет-магазин за 30 дней с уникальным дизайном и продуманной структурой который
+					<span>выделит вас на фоне конкурентов</span>
+				</p>
+			</div>
+			<div class="home__bottom">
+				<a href="#" class="home__button button">Узнать стоимость</a>
+					<p class="home__info">
+					<span>Оставьте заявку и получите бесплатную консультацию от специалиста, полный расчет стоимости
+						разработки и бонус:</span> <br>
+					«15 сервисов которые покажут стратегию продвижения конкурентов, всё об их выдаче в поиске и не только»
+				</p>
+			</div>
+		</div>
+		<div class="home__img home__img-bg">
+			<img src="img/home/home-bg.png" alt="Фон">
+		</div>
+	</div>
+</section>
+				<section class="features">
+	<div class="features__container _container">
+		<div class="features__top">
+			<h1 class="features__title title">
+				Мы создаем интернет-магазины, <span>которые продают</span> 
+			</h1>
+		</div>
+		<div class="features__content content-features">
+			<div class="content-features__item">
+				<p class="content-features__num">01</p>
+				<p class="content-features__property">Удобный интерфейс</p>
+				<p class="content-features__text">Блоковая подача информации, удобные кнопки, карточки товаров, понятное меню и легкая навигация по многостраничному сайту.</p>
+				
+			</div>
+			<div class="content-features__item">
+				<p class="content-features__num">02</p>
+				<p class="content-features__property">Продающая структура</p>
+				<p class="content-features__text">Делаем анализ вашей целевой аудитории и вашего предложения. Опираясь на анализ прописываем продающуюу структуру сайта.</p>
+				
+			</div>
+			<div class="content-features__item">
+				<p class="content-features__num">03</p>
+				<p class="content-features__property">Адаптивность</p>
+				<p class="content-features__text">
+					Сайт корректно отображается на различных устройствах, элементы динамически подстраиваются под различные разрешения экрана, что повышает конверсию сайта в покупку.
+				</p>
+			</div>
+			<div class="content-features__item">
+				<p class="content-features__num">04</p>
+				<p class="content-features__property">Уникальный дизайн	</p>
+				<p class="content-features__text">Не пользуемся шаблонными решениями. Под каждый проект разрабатывается индивидуальный дизайн который подчеркнет имидж компании</p>
+			</div>
+			<div class="content-features__item">
+				<p class="content-features__num">05</p>
+				<p class="content-features__property">Защита и безопасность</p>
+				<p class="content-features__text">Подключаем HTPS протокол, защиту от DDOS атак, чтобы данные клиентов были в безопасности.</p>
+			</div>
+			<div class="content-features__item">
+				<p class="content-features__num">06</p>
+				<p class="content-features__property">SEO оптимизация</p>
+				<p class="content-features__text">Сайты соответствуют требованиям поисковой оптимизации, они без труда покоряют топы поисковой выдачи Яндекс и Google.</p>
+			</div>
+		</div>
+		<div class="features__bottom bottom">
+			<a href="#" class="bottom__button button">Узнать стоимость</a>
+		</div>
+	</div>
+</section>
+				<section class="benefits">
+	<div class="benefits__container _container">
+		<h2 class="benefits__title title">
+			Что вы <span>получаете ?</span> 
+		</h2>
+		<div class="benefits__items">
+			<div class="benefits__item">
+				<div class="benefits__img">
+					<img src="img/benefits/benefit-1.png" alt="Картинка">
+				</div>
+				<div class="benefits__body">
+					<h3 class="benefits__lable">Каталог товаров</h3>
+					<ul class="benefits__list">
+						<li class="benefits__property">возможность выгружать свои товары в неограниченном количестве</li>
+						<li class="benefits__property">добавлять и редактировать описание товаров</li>
+						<li class="benefits__property">сортировать товары по заданным критериям</li>
+						<li class="benefits__property">моментальная оплата товара или оформление при помощи добавления корзины</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="benefits__item benefits__item-rev">
+				<div class="benefits__img">
+					<img src="img/benefits/benefit-2.png" alt="Картинка">
+				</div>
+				<div class="benefits__body">
+					<h3 class="benefits__lable">Оформление заказа</h3>
+					<ul class="benefits__list">
+						<li class="benefits__property">личный кабинет</li>
+						<li class="benefits__property">корзина с отображением выбранных товаров</li>
+						<li class="benefits__property">оформление заказа с указанием контактных данных</li>
+						<li class="benefits__property">возможность приема онлайн-платежей</li>
+						<li class="benefits__property">использование купонов, скидок и специальных предложений</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="benefits__item">
+				<div class="benefits__img">
+					<img src="img/benefits/benefit-3.png" alt="Картинка">
+				</div>
+				<div class="benefits__body">
+					<h3 class="benefits__lable">Интеграции</h3>
+					<ul class="benefits__list">
+						<li class="benefits__property">1С, Мой склад (выгрузка товаров на сайт, полная синхронизация)</li>
+						<li class="benefits__property">Маркетплейсы (Яндекс.Маркет, Wildberries, Goods, Ozon)</li>
+						<li class="benefits__property">Интеграция со службами доставки СДЭК, Почта России</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="benefits__item benefits__item-rev">
+				<div class="benefits__img">
+					<img src="img/benefits/benefit-4.png" alt="Картинка">
+				</div>
+				<div class="benefits__body">
+					<h3 class="benefits__lable">CRM</h3>
+					<ul class="benefits__list">
+						<li class="benefits__property">фиксация и отслеживание поступивших заявок</li>
+						<li class="benefits__property">уведомления о заказах</li>
+						<li class="benefits__property">сортировать товары по заданным критериям</li>
+						<li class="benefits__property">отчетность магазина</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="benefits__bottom bottom">
+			<a href="#" class="bottom__button button">Узнать стоимость</a>
+		</div>
+	</div>
+</section>
+				<section class="search">
+	<div class="search__container _container">
+		<div class="search__content">
+			<h2 class="search__title title">Исследуем <span>бизнес</span></h2>
+			<div class="search__body">
+				<p class="search__text">
+					Каждый клиент – своя история. Мы не берем шаблонные решения, а исследуем рынок конкретно под ваши цели и задачи. 
+				</p>
+				<p class="search__text">
+					Сделать интернет-магазин с нуля непросто. Нужен сайт с качественной разработкой дизайна, который не будет отвлекать от сути, наполнением и рабочими модулями. Кроме этого, для успешного запуска электронной торговой площадки владельцу бизнеса требуется найти поставщиков, выбрать товарные позиции, просчитать рентабельность, уладить другие организационные вопросы вне сети.
+				</p>
+				<p class="search__text">
+					Создание интернет-магазина лучше делегировать на профессионалов. Мы возьмем на себя вопросы по разработке интернет-магазина под ключ. Специалисты компании предоставляют заказчику готовый продающий сайт. Он уже наполнен контентом, ориентирован на конечного потребителя и интуитивно понятен для заказчика.
+				</p>
+			</div>
+		</div>
+		<div class="search__img">
+			<img src="img/search/search-bg.png" alt="Фон">
+		</div>
+	</div>
+</section>
+				<section class="stages">
+	<div class="stages__container _container">
+		<h2 class="stages__title title">Этапы</h2>
+		<div class="stages__wrapper">
+			<nav class="stages__navbar navbar-stages">
+				<ul class="navbar-stages__list">
+					<li class="navbar-stages__item _active">
+						<a href="#stage-1" class="navbar-stages__link">
+							01. Маркетинговый анализ бизнеса
+						</a>
+					</li>
+					<li class="navbar-stages__item">
+						<a href="#stage-2" class="navbar-stages__link">
+							02. Привлекательный дизайн
+						</a>
+					</li>
+					<li class="navbar-stages__item">
+						<a href="#stage-3" class="navbar-stages__link">
+							03. Профессиональная верстка
+						</a>
+					</li>
+					<li class="navbar-stages__item">
+						<a href="#stage-4" class="navbar-stages__link">
+							04. «Посадка» на CMS
+						</a>
+					</li>
+					<li class="navbar-stages__item">
+						<a href="#stage-5" class="navbar-stages__link">
+							05. Тестирование и доработка
+						</a>
+					</li>
+					<li class="navbar-stages__item">
+						<a href="#stage-6" class="navbar-stages__link">
+							06. Запуск сайта
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="stages__items">
+				<div id="stage-1" class="stages__item item-stages">
+					<div class="item-stages__top">
+						<p class="item-stages__num">1</p>
+						<h3 class="item-stages__title">Маркетинговый анализ бизнеса</h3>
+					</div>
+					<div class="item-stages__content">
+						<p class="item-stages__text">
+							На предварительном этапе мы выясняем специфику вашего бизнеса, товаров. Отмечаем ваши преимущества
+							и уникальные предложения, изучаем ожидания и потребности целевой аудитории, рассматриваем ближайшее
+							конкурентное окружение.
+						</p>
+						<p class="item-stages__text">
+							На основании полученных данных мы разрабатываем прототип интернет-магазина, пишем техническое ТЗ
+							для специалистов, готовим рекомендации по текстовому наполнению с учетом требований SEO,
+							разрабатываем план по внешней и внутренней оптимизации сайта. Также мы создаем набор готовых
+							элементов для пользовательского интерфейса.
+						</p>
+					</div>
+					<div class="item-stages__img">
+						<img src="img/stages/stage-1.jpg" alt="Картинка">
+					</div>
+				</div>
+				<div id="stage-2" class="stages__item item-stages">
+					<div class="item-stages__top">
+						<p class="item-stages__num">2</p>
+						<h3 class="item-stages__title">Привлекательный дизайн</h3>
+					</div>
+					<div class="item-stages__content">
+						<p class="item-stages__text">
+							Интерфейс сайта будет соответствовать современным требованиям и отвечать ожиданиям целевой аудитории. Опытные специалисты Millenium создадут UX-дизайн, отталкиваясь от данных анализа пользовательского поведения, что позволит в несколько раз увеличить конверсию.
+						</p>
+						<p class="item-stages__text">
+							Мы подберем оптимальные цветовые сочетания (основной, дополнительные, акцентные цвета), уделим внимание четкости графики, наглядности интерфейса, понятной и лаконичной визуализации.
+						</p>
+					</div>
+					<div class="item-stages__img">
+						<img src="img/stages/stage-2.jpg" alt="Картинка">
+					</div>
+				</div>
+				<div id="stage-3" class="stages__item item-stages">
+					<div class="item-stages__top">
+						<p class="item-stages__num">3</p>
+						<h3 class="item-stages__title">Привлекательный дизайн</h3>
+					</div>
+					<div class="item-stages__content">
+						<p class="item-stages__text">
+							Мы производим верстку по стандарту Pixel Perfect, который предполагает точное соответствие сверстанных страниц дизайн-макету. Наши специалисты напишут чистый код с двухфакторной проверкой, позволяющий обеспечить высокую скорость загрузки на любых браузерах и электронных устройствах (десктопных и мобильных).
+						</p>
+						<p class="item-stages__text">
+							Профессиональная адаптивная верстка является важным условием бесперебойной надежной работы сайта на протяжении длительного времени. 
+						</p>
+					</div>
+					<div class="item-stages__img">
+						<img src="img/stages/stage-3.jpg" alt="Картинка">
+					</div>
+				</div>
+				<div id="stage-4" class="stages__item item-stages">
+					<div class="item-stages__top">
+						<p class="item-stages__num">4</p>
+						<h3 class="item-stages__title">«Посадка» на CMS</h3>
+					</div>
+					<div class="item-stages__content">
+						<p class="item-stages__text">
+							Невозможно представить интернет-магазин без системы управления сайтом. Специалисты Millenium выполнят посадку готовой верстки вашего магазина на CMS №1 в странах СНГ - 1с Битрикс.
+						</p>
+						<p class="item-stages__text">
+							Благодаря CMS, вы просто заходите в административную панель, и, при помощи понятных полей, легко управляете содержимым — редактируете новости, вносите коррективы в товары, добавляет фото и видеоконтент, модерируете и выполняете множество других действий, которые без CMS были бы сущим кошмаром.
+						</p>
+					</div>
+					<div class="item-stages__img">
+						<img src="img/stages/stage-4.jpg" alt="Картинка">
+					</div>
+				</div>
+				<div id="stage-5" class="stages__item item-stages">
+					<div class="item-stages__top">
+						<p class="item-stages__num">5</p>
+						<h3 class="item-stages__title">Тестирование и доработка</h3>
+					</div>
+					<div class="item-stages__content">
+						<p class="item-stages__text">
+							Чтобы избежать проблем во время использования сайта, на данном этапе мы отрабатываем все возможные сценарии взаимодействия пользователей с сайтом. Это позволяет вовремя выявить ошибки и устранить их. Мы тестируем usability и безопасность сайта, проверяем скорость загрузки страниц, работу форм обратной связи и интерактивных элементов, отображение страниц на разных устройствах. Это позволяет на 100% гарантировать функциональность ресурса.
+						</p>
+					</div>
+				</div>
+				<div id="stage-6" class="stages__item item-stages">
+					<div class="item-stages__top">
+						<p class="item-stages__num">6</p>
+						<h3 class="item-stages__title">Запуск сайта</h3>
+					</div>
+					<div class="item-stages__content">
+						<p class="item-stages__text">
+							Когда все проверено и выполнены все нужные доработки, остается лишь выполнить грамотный запуск сайта. Наши специалисты сверяют всё по чек-листу, чтобы избежать неприятностей и получить на выходе идеальный интернет-магазин с высокой конверсией. Сайт от профессионалов Millenium позволит вам легко привлекать новых клиентов и станет достойным лицом вашей компании в интернете.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="about">
+	<div class="about__container _container">
+		<div class="about__wrapper">
+			<div class="about__content">
+				<h2 class="about__title title">
+					Компания
+					<br>
+					Millenium-
+				</h2>
+				<p class="about__text">
+					Это дорогая и долгая разработка интернет-магазинов на 1С Битрикс! Нельзя сделать <strong>качественный</strong> цифровой продукт за дешево и быстро!
+				</p>
+				<p class="about__text">
+					Мы создадим интернет-магазин с нуля. Заказчику не придется искать других IT-специалистов для дальнейшей настройки и запуска сайта. Мы настроим сервисы, интегрируем модули для онлайн-торговли, добавим контент и товары. Работы по созданию интернет-магазина с нуля ведутся только после анализа ниши бизнеса.
+				</p>
+			</div>
+			<div class="about__body">
+				<h3 class="about__num">
+					Звоните нам по телефону <br>
+					+7 (495) 792-66-69
+				</h3>
+				<p class="about__text">
+					или закажите обратный звонок чтобы получить ответы на все интересующие вас вопросы.
+				</p>
+				<form class="about__form">
+					<lable class="about__lable">
+						<input type="text" class="about__input" placeholder="Введите ваше имя">
+					</lable>
+					<lable class="about__lable">
+						<input type="tel" class="about__input" placeholder="+ 7 (999) 999 99 99">
+					</lable>
+					<button class="about__button button">
+						Перезвоните мне
+					</button>
+					<label class="about__lable about__lable-checkbox">
+						<input type="checkbox" class="about__checkbox">
+						<p class="about__text">
+							Cогласен/а на обработку персональных данных
+						</p>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__top">
+			<div class="footer__content">
+				<h3 class="footer__title title">Напишите нам</h3>
+				<a href="mailto:info@millenium.ru" class="footer__mail">info@millenium.ru</a>
+			</div>
+			<a href="#modal" class="footer__button button modal-open">Заказать звонок</a>
+		</div>
+		<div class="footer__main">
+			<a href="#modal" class="footer__button button modal-open">Заказать звонок</a>
+			<div class="footer__body">
+				<p class="footer__text">
+					Москва, ул. Профсоюзная 76, БЦ «ГАЛЕРЕЯ 76» 2 этаж
+				</p>
+				<p class="footer__text">
+					+7 (495) 792-66-69 <br>
+					пн-пт 10:00–19:00
+				</p>
+			</div>
+			<div class="footer__socials">
+				<a href="#" class="footer__social _icon-telegram-icon"></a>
+				<a href="#" class="footer__social _icon-whatsapp-icon"></a>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer_img">
+				<svg width="161" height="55" viewBox="0 0 161 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.944 36L16.92 27.096L12.6 34.344H10.488L6.168 27.288V36H1.8V19.2H5.712L11.616 28.896L17.376 19.2H21.288L21.336 36H16.944Z" fill="white"/>
+					<path d="M83.168 32.328V36H69.68V19.2H82.856V22.872H74.384V25.704H81.848V29.256H74.384V32.328H83.168ZM103.469 19.2V36H99.557L92.141 27.048V36H87.485V19.2H91.397L98.813 28.152V19.2H103.469ZM108.501 19.2H113.253V36H108.501V19.2ZM126.066 36.336C123.57 36.336 121.626 35.656 120.234 34.296C118.858 32.936 118.17 31.008 118.17 28.512V19.2H122.922V28.368C122.922 31.056 123.986 32.4 126.114 32.4C128.226 32.4 129.282 31.056 129.282 28.368V19.2H133.962V28.512C133.962 31.008 133.266 32.936 131.874 34.296C130.498 35.656 128.562 36.336 126.066 36.336ZM154.029 36L153.981 27.096L149.661 34.344H147.549L143.253 27.336V36H138.861V19.2H142.773L148.677 28.896L154.437 19.2H158.349L158.397 36H154.029Z" fill="white"/>
+					<rect x="28" y="19" width="7" height="17" fill="#6B5AF9"/>
+					<rect x="42" y="7" width="7" height="41" fill="#6B5AF9"/>
+					<rect x="56" width="7" height="55" fill="#6B5AF9"/>
+				</svg>
+			</div>
+			<p class="footer__lable">© 2018–2021 | Millenium - создание интернет-магазинов на 1С Битрикс</p>
+			<a href="#" class="footer__link">Политика конфиденциальности</a>
+		</div>
+	</div>
+</footer>
+
+
+
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
